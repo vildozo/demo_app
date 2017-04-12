@@ -1,0 +1,110 @@
+HEROKU: https://limitless-brook-47958.herokuapp.com/
+GITHUB: https://github.com/vildozo/demo_app
+
+1.Crea un nuevo usuario, y usando el inspector HTML (en Chrome: More tools ->
+Developer Tools) del navegador determina cuál es el id CSS del texto “User was
+sucessfully created”. ¿Qué pasa si refrescas el navegador después de crear el
+usuario?
+
+id=notice y si refrescamos la pagina muestra el show del elemento que creamos
+
+
+
+2. ¿Qué pasa si intentas crear un usuario con nombre pero ningún correo?
+
+Permite crearlo
+
+
+
+3. ¿Qué pasa si intentas crear un usuario con un correo inválido como @ejemplo.com?
+
+Permite crearlo
+
+
+
+4. Destruye a todos los usuarios creados hasta el momento. ¿Rails despliega un
+mensaje predeterminado cuando un usuario es destruido?
+
+Si muestre el mensaje: "Are you sure? con dos botones Ok y cancel"
+
+
+
+
+
+
+1. Encuentra la línea de código del scaffolding que obtiene el usuario de la base de datos.
+
+create    db/migrate/20170412030447_create_users.rb
+
+
+
+
+2. ¿Cuál es el nombre del archivo de la vista para editar un usuario?
+
+edit.html.erb
+
+
+
+
+
+
+
+
+1. Crea un nuevo micropost, luego usa el inspector HTML del navegador para determinar el
+CSS id para el texto “Micropost was successfully created”. ¿Qué pasa cuando refrescas el
+navegador?
+
+el id es igual a "notice"; y cuando hacemos el refresh hace el show del ejemplo creado
+
+
+
+2. Intenta crear un micropost con contenido vacío y ningún id de usuario.
+
+permite crearlo 
+
+
+3. Intenta crear un micropost con más de 140 caracteres de contenido (puedes generar el text (en http://www.blindtextgenerator.com/)
+
+Si permite crear
+
+
+
+
+
+1. Intenta crear una publicación con el mismo largo mayor a 140 caracteres usado
+anteriormente. ¿Cómo ha cambiado el comportamiento?
+
+No, ya no permite crear con mas de 140 caracteres
+
+
+
+2. Utilizar el inspector HTML del navegador para determinar el CSS id del mensaje de
+error producido por el ejercicio previo.
+
+el idd es error_explanation
+
+
+
+
+
+
+1. Examinando los contenidos del archivo Application controller, encuentra la línea que
+hacer que ApplicationController herede de ActionController::Base.
+
+class ApplicationController < ActionController::Base
+
+
+
+2. ¿Hay algún archivo análogo que contenga una línea donde ApplicationRecord herede
+de ActiveRecord::Base? Pista: Tendría que estar en un archivo llamado algo parecido
+a application_record.rb en la carpeta app/models.
+
+class ApplicationRecord < ActiveRecord::Base
+
+
+
+
+
+
+
+
